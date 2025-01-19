@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #e4af85, #080c5f);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.todoapp{
+    height: 400px;
+    width: 400px;
+    border: 2px solid white;
+    background-color: #F4F2F3;
+    font-size: 20px;
+    color: #230903;
+    border-radius: 5px;
+    padding-left: 130px;
+   
+}
+.todoapp img{
+    margin-left: -215px;
+    margin-top: 15px;
+    height: 50px;
+    width: 50px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #d8dde8;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    margin-left: -100px;
+    margin-right: 20px;
+    margin-top: 10px;
+    height: 50px;
+
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: none;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    margin-left: -90px;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 5px;
+    left: 8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(checked.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #edeef0;
+}
